@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option csharp_namespace = "server";
+
+package chat;
+
+
+service Chater {
+	  rpc SendToPerson (SendPersonRequest) returns (SendPersonReply);
+  rpc BroadAll (SendMSGRequest) returns (BroadReply);
+
+}
+
+// The request message containing the user's name.
+message SendMSGRequest {
+  string name = 1;
+  string content=2;
+}
+
+// The response message containing the greetings.
+message BroadReply {
+  string name = 1;
+  string content=2;
+}
+
+message SendPersonRequest{
+  string sendName = 1;
+  string content=2;
+  string receiveName=3;
+}
+
+message SendPersonReply{
+ int32 state=1;
+}
