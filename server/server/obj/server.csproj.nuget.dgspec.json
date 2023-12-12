@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\gitHub\\biliGrpc\\client_server\\server\\server\\server.csproj": {}
+    "G:\\gitHub\\gRPC_client_server\\server\\server\\server.csproj": {}
   },
   "projects": {
-    "G:\\gitHub\\biliGrpc\\client_server\\server\\server\\server.csproj": {
+    "G:\\gitHub\\gRPC_client_server\\server\\server\\server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\gitHub\\biliGrpc\\client_server\\server\\server\\server.csproj",
+        "projectUniqueName": "G:\\gitHub\\gRPC_client_server\\server\\server\\server.csproj",
         "projectName": "server",
-        "projectPath": "G:\\gitHub\\biliGrpc\\client_server\\server\\server\\server.csproj",
+        "projectPath": "G:\\gitHub\\gRPC_client_server\\server\\server\\server.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "G:\\gitHub\\biliGrpc\\client_server\\server\\server\\obj\\",
+        "outputPath": "G:\\gitHub\\gRPC_client_server\\server\\server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -48,6 +48,10 @@
             "Grpc.AspNetCore": {
               "target": "Package",
               "version": "[2.40.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
             }
           },
           "imports": [

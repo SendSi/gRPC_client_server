@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "server";
+
+package role;
+
+
+service Roleer {
+  rpc RoleLogin(LoginRequest) returns (LoginReply);
+}
+
+
+message LoginRequest {
+  string account = 7;
+  string pwd=8;
+}
+
+// The response message containing the greetings.
+message LoginReply {
+  int32 state = 3;//1³É¹¦
+}
